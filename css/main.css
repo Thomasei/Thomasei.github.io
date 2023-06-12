@@ -1,0 +1,93 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply flexbox to the body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #FEFEFE; /* Updated text color for the body */
+}
+
+/* Header styles */
+header {
+  background-color: #6FC2B4; /* Updated background color for the header */
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between;
+  padding: 10px 20px; /* Updated padding for the header */
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Center vertically */
+  padding-left: 10px; /* Added left padding for the navigation menu */
+}
+
+nav a {
+  margin-left: 10px;
+  color: #070606 ; /* Updated text color for the nav links */
+  text-decoration: none;
+  padding: 8px; /* Added padding around the anchor links */
+  border-radius: 4px; /* Added border-radius for rounded corners */
+  background-color: transparent; /* Set initial background color as transparent */
+  transition: background-color 0.3s; /* Added transition effect */
+}
+
+nav a:hover {
+  background-color: #2A5C5D; /* Updated background color for the nav links on hover */
+  color:#FEFEFE;
+}
+
+/* Main content styles */
+main {
+  color: black;
+  flex-grow: 1;
+  padding: 20px;
+  display: grid; /* Add grid layout to the main section */
+  grid-template-columns: minmax(10%, 1fr) minmax(auto, 3fr) minmax(10%, 1fr); /* Adjust column widths as needed */
+  gap: 10px; /* Added gap between grid items */
+}
+
+section {
+  grid-column: 2;
+}
+
+/* Article styles */
+article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+article p {
+  text-align: justify;
+  flex: 1 1 calc(100% - 200px); /* Adjust the width of the paragraphs to accommodate the image */
+}
+
+article figure img {
+  max-width: 200px; /* Set a smaller maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add margin to create space between the image and text */
+  float: left; /* Float the image to the left */
+  clear: left; /* Clear the float so that subsequent elements wrap around it */
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2b312f;
+}
+
+.logo {
+  font-size: 24px;
+  color: #070606 ; /* Updated text color for the logo */
+  padding-right: 10px; /* Added right padding for the logo */
+}
