@@ -165,6 +165,10 @@ h2{
 }
 
 @media (max-width: 900px) {
+  main {
+    grid-template-columns: minmax(5%, 0.1fr) minmax(auto, 5fr) minmax(5%, 0.1fr);
+  }
+
   h1{
     font-size: 20px;
   }
