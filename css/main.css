@@ -101,14 +101,14 @@ footer {
   background-color: #2b312f;
 }
 h1{
-  font-size: 32px;
+  font-size: 2rem;
   border-bottom: 5px solid #000; /* Add a line under the h1 elements */;
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
 }
 h2{
-  font-size: 28px;
+  font-size: 1.5rem;
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
