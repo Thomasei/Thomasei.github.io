@@ -47,7 +47,7 @@ nav a:hover {
 
 /* Main content styles */
 main {
-  color: black;
+  color: #070606;
   flex-grow: 1;
   padding: 20px;
   display: grid; /* Add grid layout to the main section */
@@ -82,6 +82,11 @@ article h1 {
 article p {
   flex: 1; /* Allow the text to fill the remaining space */
   text-align: justify;
+  font-size: 16px;
+  line-height: 26px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 article figure img {
@@ -95,7 +100,13 @@ footer {
   text-transform: uppercase;
   background-color: #2b312f;
 }
+h1{
+  font-size: xx-large
+}
 
+h2{
+  font-size: x-large
+}
 .logo {
   font-size: 24px;
   color: #070606; /* Updated text color for the logo */
@@ -126,12 +137,17 @@ footer {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 10px;
-  text-transform: capitalize;
+  text-transform: up;
   border-bottom: 1px solid #000; /* Add a line under the h1 elements */
 }
 .text p {
   margin-bottom: 10px;
   text-decoration: none;
+  font-size: 18px;
+}
+.text a{
+  text-decoration: none;
+  color:#070606
 }
 
 .fa-envelope,
@@ -139,7 +155,7 @@ footer {
   margin-right: 5px;
 }
 .fa-phone-square-alt{
-  color:green;
+  color:green
 }
 
 @media (max-width: 900px) {
