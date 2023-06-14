@@ -101,11 +101,12 @@ footer {
   background-color: #2b312f;
 }
 h1{
-  font-size: xx-large
+  font-size: 32px;
+  border-bottom: 5px solid #000; /* Add a line under the h1 elements */;
 }
 
 h2{
-  font-size: x-large
+  font-size: x-large;
 }
 .logo {
   font-size: 24px;
